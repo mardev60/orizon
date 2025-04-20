@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ice-blue: #a5cdff;
+  --neon-blue: #4c83ff;
+  --dark-blue: #0a1929;
+  --dark-gray: #1a202c;
+  --error-red: #ff4e4e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(26, 32, 44, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(76, 131, 255, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(76, 131, 255, 0.8);
+}
+
+/* Custom React Datepicker Styling */
+.react-datepicker {
+  font-family: 'Rajdhani', sans-serif !important;
+  background-color: rgba(10, 25, 41, 0.9) !important;
+  border: 1px solid rgba(165, 205, 255, 0.3) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.react-datepicker__header {
+  background-color: rgba(10, 25, 41, 0.7) !important;
+  border-bottom: 1px solid rgba(165, 205, 255, 0.2) !important;
+}
+
+.react-datepicker__month-container {
+  width: 280px !important;
+}
+
+.react-datepicker__day-name, .react-datepicker__day, 
+.react-datepicker__time-name {
+  color: var(--ice-blue) !important;
+}
+
+.react-datepicker__day:hover {
+  background-color: rgba(76, 131, 255, 0.3) !important;
+  border-radius: 4px !important;
+}
+
+.react-datepicker__day--selected, 
+.react-datepicker__day--in-selecting-range, 
+.react-datepicker__day--in-range {
+  background-color: var(--neon-blue) !important;
+  color: white !important;
+  border-radius: 4px !important;
+}
+
+.react-datepicker__current-month, 
+.react-datepicker-time__header, 
+.react-datepicker-year-header {
+  color: white !important;
+}
+
+.react-datepicker__navigation {
+  top: 8px !important;
+}
+
+/* Custom Range Slider Styling */
+.custom-range-slider .range-slider {
+  background-color: rgba(165, 205, 255, 0.2) !important;
+  height: 4px !important;
+}
+
+.custom-range-slider .range-slider__range {
+  background-color: var(--neon-blue) !important;
+}
+
+.custom-range-slider .range-slider__thumb {
+  background-color: var(--neon-blue) !important;
+  width: 16px !important;
+  height: 16px !important;
+  box-shadow: 0 0 10px rgba(76, 131, 255, 0.5) !important;
+}
+
+.custom-range-slider .range-slider__thumb[data-active] {
+  transform: translate(-50%, -50%) scale(1.2) !important;
+}
+
+.custom-range-slider .range-slider__thumb:hover {
+  box-shadow: 0 0 15px rgba(76, 131, 255, 0.8) !important;
+}
+
+/* Shadow glow effect */
+.shadow-glow {
+  box-shadow: 0 0 30px rgba(76, 131, 255, 0.2);
+}
+
+.shadow-glow-blue {
+  box-shadow: 0 0 20px rgba(76, 131, 255, 0.4);
+}
+
+/* Glassmorphism */
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+}
+
+/* Text colors */
+.text-ice-blue {
+  color: var(--ice-blue);
+}
+
+.text-neon-blue {
+  color: var(--neon-blue);
+}
+
+.text-error-red {
+  color: var(--error-red);
+}
+
+/* Background colors */
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+
+.bg-dark-gray {
+  background-color: var(--dark-gray);
+}
+
+.bg-neon-blue {
+  background-color: var(--neon-blue);
+}
+
+.bg-ice-blue {
+  background-color: var(--ice-blue);
+}
+
+.bg-error-red {
+  background-color: var(--error-red);
+}
